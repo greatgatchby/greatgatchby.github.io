@@ -1,0 +1,7 @@
+{
+  "name": "Jake_Ngatchu",
+  "version": "1.0.0",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2"
+  }
+}
