@@ -2,128 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> </title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script></head>
-<script defer src="node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
-<script defer src="node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
-<script defer src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
-<body class="p-0 bg-dark m-0">
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="font-size:2.5vh">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="index.html"><img style="height:50px;border-radius:30px" src="https://pbs.twimg.com/profile_images/793300816190959616/0_vxsE6v_400x400.jpg"></a>
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="bg-danger">
+<!--navigation-->
+<div class="d-flex bg-white flex-column px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold">"Hi i'm Jake"</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">I'm a Business Management and Computer Science Student (Bsc) at Keele University. I like building web applications and working on all sorts of projects. I like video games, rugby and trainers (Sneakers).</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a id="project-btn" href="#projcets" class="btn btn-primary btn-lg px-4 me-sm-3">See some of my projects</a>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact me</button>
+        </div>
+    </div>
+    <h4>I Build Projects in:</h4>
+    <div class="align-items-end">
+        <div class="overflow-hidden" style="max-height: 40vh;">
+            <div class="container bg-dark px-auto p-3">
+                <img src="assets/images/1200px-HTML5_logo_and_wordmark.svg.png" height="100"/>
+                <img src="assets/images/CSS3_logo_and_wordmark.svg.png" height="100"/>
+                <img src="assets/images/480px-Unofficial_JavaScript_logo_2.svg.png" height="100" width="100"/>
+                <img src="assets/images/nodejs-logo-FBE122E377-seeklogo.com.png" height="100"/>
+                <img src="assets/images/256_Php_logo-512.png" height="100" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-dark text-white">
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom" id="projcets">Projects</h2>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto ">
-            <li class="nav-item active">
-                <a class="nav-link " href="index.html">HOME <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">ABOUT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="portfolio.html">PORTFOLIO</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="blog.html">BLOG</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.fiverr.com/share/qjwlk9">HIRE ME</a>
-            </li>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
 
-        </ul>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <form method="get" action="assets/Jake%20Ngatchu%20CV%20(2).docx">
-                    <button class="btn btn-primary" href="#">CV DOWNLOAD</button>
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/images/Opera Snapshot_2021-05-16_200034_celery-beagle-dag9.squarespace.com.png');">
+                    <a href="https://celery-beagle-dag9.squarespace.com" class="stretched-link"></a>
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Skeendeep Medical Aesthetic Clinic</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/images/icl logo.png'); background-size: cover;">
+                    <a href="https://www.instagram.com/ice_coldlemon/" class="stretched-link"></a>
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-dark">Ice Cold Lemon: Consignment Store</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container pb-5">
+        <h2 class="border-bottom text-center ">Contact Me</h2>
+        <div class="d-flex justify-content-center pt-5">
+            <div class="card w-50 p-2 text-dark">
+                <form action="mailto:jngatchu@gmail.com">
+                    <div class="mb-3">
+                        <label for="firstname" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email">
+                        <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+
+                    </div>
+                    <div class="mb-3 form-check">
+                        <label class="form-check-label" for="exampleCheck1">Message</label>
+                        <textarea rows="10" style="resize: none" class="form-control" id="exampleCheck1"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
-            </li>
-        </ul>
-
-    </div>
-
-
-</nav>
-<div class="container-fluid d-flex p-0 m-0 justify-content-center align-items-center" style="height:100vh;overflow:hidden" >
-    <video loop muted autoplay class="card-img" style="height:inherit;object-fit: cover">
-        <source src="assets/videos/Blurred Video of Scripts Being Typed (1).mp4">
-    </video>
-    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-        <div class="text-center">
-            <h1 style="font-size:4vh">
-                Hi My Name Is Jake, <br>
-
-                I'm a Business Management and Computer Science Student
-            </h1>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-lg-6 p-2">
-                    <a class="btn btn-outline-primary w-75" href="portfolio.html">
-                        <h3 style="color:white;font-size:3vh">My work</h3>
-                    </a>
-                </div>
-                <div class="col-lg-6 p-2">
-                    <a class="btn btn-primary w-75" href="#">
-                        <h3 style="color:white;font-size:3vh">Contact Me</h3>
-                    </a>
-                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container-flui d-flex bg-1">
-    <div class="container d-flex flex-column align-items-center" style="height:100vh">
-        <div class="row ">
-            <div class="col-md-6">
-                <img src="assets/images/4886718.png" style="width:100%" alt="image of workers working Digital vector created by freepik - www.freepik.com"><br>
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-                <h1>
-                    I like building websites, apps and working on projects
-                </h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 d-flex align-items-center">
-                <h1>
-                    My Programming Languages Are: HTML, CSS, PHP, SQL and Python            </h1>
-            </div>
-            <div class="col-md-6">
-                <img src="assets/images/4886718.png" style="width:100%" alt="image of workers working Digital vector created by freepik - www.freepik.com"><br>
-            </div>
-        </div>
-    </div>
-</div>
-<footer class="bg-dark text-center text-white">
-    <div class="d-flex border-bottom border-top border-2 border-light">
-        <div class="col-md-6 p-0 m-0">
-            <ul class="list-group">
-                <li class="list-group-item border-0 bg-dark">HOME</li>
-                <li class="list-group-item border-0 bg-dark">ABOUT</li>
-                <li class="list-group-item border-0 bg-dark">PORTFOLIO</li>
-                <li class="list-group-item border-0 bg-dark">BLOG</li>
-                <li class="list-group-item border-0 bg-dark">HIRE ME</li>
-            </ul>
-        </div>
-        <div class="col-md-6 d-flex flex-column">
-            Add Me On:
-            <h1>
-                <div class="flex-row">
-                    <a href="#"><i class="fab fa-linkedin"></a></i>
-                    <a href="#"><i class="fab fa-discord"></i></a>
-                    <a href="#"><i class="fab fa-slack"></i></a>
-                </div>
-            </h1>
-        </div>
-    </div>
-    <div class="col-md-12 text-center text-white">
-        Designed By Jake Ngatchu
-    </div>
-</footer>
 </body>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.esm.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("#project-btn").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 100, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+
 </html>
