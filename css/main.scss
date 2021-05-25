@@ -1,10 +1,5 @@
 // Custom.scss
-html,body
-{
-margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+
 $primary: #bc6ff1;
 $secondary:#52057b;
 $dark: #000000;
@@ -16,6 +11,19 @@ $dark: #000000;
   -moz-animation: AnimationName 18s ease infinite;
   -o-animation: AnimationName 18s ease infinite;
   animation: AnimationName 18s ease infinite;
+}
+html,body
+{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+main{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 @-webkit-keyframes AnimationName {
